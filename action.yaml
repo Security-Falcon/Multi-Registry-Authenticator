@@ -1,0 +1,15 @@
+name: 'Multi Registry Authenticator (MRA)'
+description: 'Multi Registry authenticator to perform  bulk login to contianer registries in a single GitHub Action'
+author: 'Abdullah Shahen'
+branding:
+  icon: log-in
+  color: 'blue'
+
+inputs:
+  registries:
+    description: 'A Multi-line string containing all registires to log into. Each in the format: REGISTRY_HOST;USERNAME;PASSWORD'
+    required: true
+
+runs:
+  using: 'node20'
+  main: 'dist/index.js'
