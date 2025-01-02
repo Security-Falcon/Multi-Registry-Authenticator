@@ -31,7 +31,7 @@ Below is an example on how to use this action in your workflow:
 ...
   steps:
       - name: Login to GitHub Container Registry
-        uses: Abdullah-Shahen/MRA@v1 # Please use full commit hash of the version tag
+        uses: Security-Falcon/Multi-Registry-Authenticator@v1 # Please use full commit hash of the version tag
         with:
           registries: |
             ghcr.io;${{ secrets.GHCR_USERNAME }};${{ secrets.GHCR_PASSWORD }}
